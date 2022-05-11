@@ -46,7 +46,6 @@
       form.onsubmit = async (e)=> {
         e.preventDefault()
         const formData = new FormData(form);
-        formData.append('username',user)
 
         let response = await fetch('./api/arts/'+user, {
           method: 'POST',
